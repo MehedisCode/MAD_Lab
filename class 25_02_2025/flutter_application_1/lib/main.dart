@@ -10,13 +10,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('My App'),
-        ),
-        body: Center(
-          child: Text('Hello, world!'),
-        ),
+      home: HomeActivity(),
+    );
+  }
+}
+
+class HomeActivity extends StatelessWidget {
+  const HomeActivity({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('My App'),
+      ),
+      body: Center(
+        child: Text('Hello, world!'),
       ),
     );
   }
